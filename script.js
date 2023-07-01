@@ -1,8 +1,6 @@
 const currentDay = $('#currentDay');
-const saveBtn =$('saveBtn')
 let currentTime =dayjs().hour()
 var rightNow = dayjs().format('MMMM DD, YYYY [at] hh:mm a');
-let textArea =$('textarea')
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
@@ -60,6 +58,6 @@ $(function () {
   // TODO: Add code to display the current date in the header of the page.
   
     $(currentDay.text(rightNow));
-    //setInterval(displayTime,1000)
+   
   
 });
